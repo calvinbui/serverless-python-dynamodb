@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "fa29d839-08d7-4899-b744-a3266a811a25",
+		"name": "python-dynamodb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET astronaut",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb21lIjoicGF5bG9hZCJ9.QszFqwfE2A9GFj3f81FWVckgbJabfmYUffFJnBKuqsc",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://58o5exwtck.execute-api.ap-southeast-2.amazonaws.com/dev/astronaut/1234567890",
+					"protocol": "https",
+					"host": [
+						"58o5exwtck",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"astronaut",
+						"1234567890"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST astronaut",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzb21lIjoicGF5bG9hZCJ9.QszFqwfE2A9GFj3f81FWVckgbJabfmYUffFJnBKuqsc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"astronaut_id\": \"1234567890\",\n\t\"astronaut_name\": \"calvinbui\"\n}"
+				},
+				"url": {
+					"raw": "https://58o5exwtck.execute-api.ap-southeast-2.amazonaws.com/dev/astronaut/create",
+					"protocol": "https",
+					"host": [
+						"58o5exwtck",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"dev",
+						"astronaut",
+						"create"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

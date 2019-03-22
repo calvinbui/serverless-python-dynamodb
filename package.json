@@ -1,0 +1,17 @@
+{
+  "name": "serverless-python-dynamodb",
+  "version": "1.0.0",
+  "description": "## Setup",
+  "main": "serverless.yml",
+  "dependencies": {
+    "serverless": "^1.38.0",
+    "serverless-pseudo-parameters": "^2.4.0",
+    "serverless-python-requirements": "^4.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
